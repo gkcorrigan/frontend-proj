@@ -1,0 +1,43 @@
+    html{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    body { background-color:hsl(225, 100%, 94%); 
+       
+        
+        
+    }
+.description {  
+    display: flex;flex-wrap: ;
+    color: hsl(224, 23%, 55%)
+    
+}
+#pay {
+    font-size: 25px;
+    color:hsl(225, 100%, 94%);
+    background-color: rgb(132, 132, 236);
+    border-radius: 10px;
+    display: absolute;
+    align-items:end ;
+}
+.infocontainer {
+    background-color: white;
+    border: 1px solid violet;
+    height: 450px;
+    width: 400px;
+    border-radius: 25px;
+}
+#cancel {
+
+    background-color:hsl(225, 100%, 94%) ;
+    border:  1px solid red;
+    display: flex;
+    color: hsl(223, 47%, 23%);
+   
+    
+}
+h1 {
+    color: hsl(223, 47%, 23%);
+}
