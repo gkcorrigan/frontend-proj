@@ -1,43 +1,117 @@
-    html{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    body { background-color:hsl(225, 100%, 94%); 
-       
-        
-        
-    }
-.description {  
-    display: flex;flex-wrap: ;
-    color: hsl(224, 23%, 55%)
-    
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-#pay {
-    font-size: 25px;
-    color:hsl(225, 100%, 94%);
-    background-color: rgb(132, 132, 236);
-    border-radius: 10px;
-    display: absolute;
-    align-items:end ;
+body {
+  background-color: hsl(225, 100%, 94%);
+  font-size: 16px;
+  font-weight: 900px;
+  display: flex;
+  justify-content: center;
 }
-.infocontainer {
-    background-color: white;
-    border: 1px solid violet;
-    height: 450px;
-    width: 400px;
-    border-radius: 25px;
-}
-#cancel {
 
-    background-color:hsl(225, 100%, 94%) ;
-    border:  1px solid red;
-    display: flex;
-    color: hsl(223, 47%, 23%);
-   
-    
+.entire-noti {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.music-picture {
+  width: 100%;
+  /* flex:1; */
+}
+
+.infocontainer {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: white;
+  height: 475px;
+  /* height: 550px;
+        width: 470px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 h1 {
-    color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  color: hsl(223, 47%, 23%);
+  margin-top: 30px;
 }
+.description {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10px;
+  color: hsl(224, 23%, 55%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+}
+.plan-details {
+  display: grid;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  flex-grow: 0.3;
+  padding-top: 5%;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 70px;
+  margin-right: 70px;
+  border-radius: 5%;
+}
+
+.plan {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+.price {
+  color: hsl(224, 23%, 55%);
+}
+
+#change {
+  background: none;
+  border: none;
+  font-weight: 700;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  align-self: center;
+  margin-top: 25%;
+}
+#pay {
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 7px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#cancel {
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 12%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.endtext {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 5px;
+}
+/* media query? Design doesn't seem to need to resize for from the mobile and desktop views for this particular project */
